@@ -1,0 +1,31 @@
+$vh:calc(100vh - 80px - 40vh);
+//Админка
+.wrapperAdmin{
+    display: flex;
+   
+}
+.AdminConWrapper{
+    width: 100%;
+}
+.NavAdminWrapper{
+    padding: 10px;
+    margin: 10px;
+    border-right: 2px #555555 solid;
+    width: 6em;
+}
+.AdminMenuItem{
+    width:200px;
+    padding: 20px;
+}
+
+
+//Форма авторизации
+.wrapperAuthorization{
+    min-height: $vh;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
+    
+}
+
+// TypeBar

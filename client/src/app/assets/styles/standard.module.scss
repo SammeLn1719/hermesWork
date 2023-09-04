@@ -1,0 +1,88 @@
+@font-face {
+    font-family: ubuntu;
+    src: url('../fonts/Ubuntu-Bold.ttf'), url('../fonts/Ubuntu-BoldItalic.ttf'), url('../fonts/Ubuntu-Italic.ttf'),url('../fonts/Ubuntu-Light.ttf'),url('../fonts/Ubuntu-LightItalic.ttf'),url('../fonts/Ubuntu-Medium.ttf'),url('../fonts/Ubuntu-MediumItalic.ttf'),url('../fonts/Ubuntu-Regular.ttf'), url('../fonts/Ubuntu-Bold.ttf'), url('../fonts/Ubuntu-BoldItalic.ttf'), url('../fonts/Ubuntu-Italic.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'ubuntu', sans-serif;
+}
+h1{
+    font-family: 'ubuntu', sans-serif; 
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#root{
+    height: 100%;
+}
+.Main{
+    flex: 1 1 auto;
+}
+
+//catalog
+.wrapperFaceCatalog{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 10em);
+    grid-auto-rows: 45px;
+    gap: 2em;
+}
+.ProductType{
+    width: 33%;
+    height: auto;
+    margin: 2em auto;
+    & .itemIMG{
+      display: flex;
+      justify-content: center;
+    }
+    & img{
+        margin: 2em auto;
+    }
+    & h3{
+        text-align: center;
+    }
+    
+}
+.buttonCatalog{
+    width: 200px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+  }
+
+// Акции 
+
+.wrapperPromotion{
+    background: url('../image/spt1976.jpg');
+    background-attachment: fixed; 
+}
+.PromotionItemSlider{
+    margin: 4em auto;
+    padding: 4em;
+    width: 900px;
+    height: 200px;
+    border: red solid 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.ListItem{
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #555;
+    margin: 2px;
+    cursor: pointer;
+}
+.BrandBarItem{
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #555;
+    margin: 2px;
+    cursor: pointer;
+}
